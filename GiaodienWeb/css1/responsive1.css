@@ -1,0 +1,365 @@
+/* Điều chỉnh kích thước modal khi màn hình có chiều rộng dưới 500px */
+@media (max-width: 768px) {
+  .modal-content {
+      width: 100% !important;
+      max-width: 100% !important;
+  }
+  #eyeIcon2 {
+    margin-right: 15px !important;
+  }
+}
+
+/* Để cho phản hồi trên thiết bị di động */
+@media screen and (max-width: 768px) {
+    #product {
+      padding: 0px;
+    }
+  
+    .product-detail {
+      grid-template-columns: 1fr; /* Điều chỉnh layout cho thiết bị di động */
+      margin-top: 50px;
+      gap: 10px;
+    }
+  
+    .slider {
+      width: 100%; /* Điều chỉnh chiều rộng slider */
+      margin-left: 0; /* Xóa margin trái */
+    }
+  
+    .img-container {
+      max-width: 100%; /* Cố định chiều rộng cho img-container */
+      width: 100%;
+    }
+  
+    .img-container img {
+      width: 100%; /* Điều chỉnh chiều rộng ảnh */
+      height: auto;
+    }
+  
+    .product-img {
+      width: 100%; /* Điều chỉnh chiều rộng của product-img */
+      margin: auto; /* Canh giữa */
+      overflow: scroll; /* Cho phép cuộn nếu ảnh nhiều hơn kích thước màn hình */
+      display: flex; /* Sử dụng flexbox để hiển thị ảnh theo hàng ngang */
+    }
+  
+    .product-img img {
+      width: 80px; /* Điều chỉnh kích thước ảnh trong product-img */
+      height: auto; /* Chiều cao tự động */
+      object-fit: cover; /* Chỉnh sửa tỷ lệ */
+      margin: 5px; /* Khoảng cách giữa các ảnh */
+    }
+  
+    .choose_size {
+      margin-top: 20px; /* Điều chỉnh khoảng cách */
+    }
+  
+    .size label {
+      width: 25px; /* Kích thước của hình vuông */
+      height: 25px; /* Kích thước của hình vuông */
+    }
+  
+    .choosequantity {
+      margin-top: 30px; /* Điều chỉnh khoảng cách */
+      margin-bottom: 10px; /* Điều chỉnh khoảng cách */
+    }
+  
+    
+  
+    .product-info .checkout-button,
+    .pay {
+      width: 165px; /* Chiếm toàn bộ chiều rộng */
+      margin: 5px ; /* Điều chỉnh margin */
+    }
+  
+    .icon_cart_btn,
+    .icon_paynow_btn {
+      display: none; /* Ẩn icon trên thiết bị di động */
+    }
+    .tabs {
+      margin-left: 5px;
+    }
+  }
+
+
+  /* REponsive giỏ hàng */
+  /* Điều chỉnh giao diện cho màn hình có chiều rộng dưới 768px */
+@media (max-width: 768px) {
+    .cart-content-left table{
+      width: max-content;
+      text-align: center;
+      white-space: nowrap;
+      border: 1px solid rgba(0,0,0,.1);
+     
+  }
+  .cart-content-left{
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+  .cart-content-left::-webkit-scrollbar {
+    height: 5px; /* Độ cao của thanh cuộn */
+  }
+  .cart-content-left::-webkit-scrollbar-thumb {
+    background-color: red; /* Màu của phần nút trượt */
+  }
+  .cart-content{
+    flex-direction: column; /* Xếp theo cột khi độ rộng màn hình nhỏ hơn */
+  }
+}
+
+
+/* Reponsive chi tiết sản phẩm */
+
+/* Điều chỉnh giao diện cho màn hình có chiều rộng nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .row-row-small {
+    padding: 20px; /* Giảm khoảng cách giữa các hàng */
+  }
+
+  .title {
+    font-size: 12px; /* Điều chỉnh kích thước font cho tiêu đề */
+  }
+
+  .col-inner {
+    padding: 10px; /* Giảm padding cho các cột */
+  }
+
+  .col-inner table th {
+    width: auto; /* Điều chỉnh chiều rộng của các cột trong bảng */
+  }
+
+  .detail-title {
+    font-size: 12px; /* Điều chỉnh kích thước font cho tiêu đề chi tiết */
+  }
+
+  .col-inner1 {
+    font-size: 16px; /* Điều chỉnh kích thước font trong col-inner1 */
+    padding: 5px; /* Điều chỉnh padding */
+  }
+
+  .img-size {
+    flex-direction: column; /* Xếp các thành phần trong img-size theo cột */
+  }
+
+  .img-size img {
+    width: 100%; /* Làm cho hình ảnh lấp đầy chiều rộng của nó */
+    height: auto; /* Đảm bảo tỷ lệ khung hình bảo tồn */
+  }
+
+  .img-size p {
+    max-width: 100%; /* Đảm bảo văn bản không tràn ra khỏi khung */
+    font-size: 14px; /* Điều chỉnh kích thước font cho văn bản */
+  }
+
+  .img-size h2 {
+    font-size: 14px; /* Điều chỉnh kích thước font cho tiêu đề h2 */
+    margin-top: 10px; /* Tạo khoảng cách từ trên xuống cho tiêu đề */
+  }
+
+  .note li {
+    font-size: 12px; /* Điều chỉnh kích thước font cho các mục trong danh sách ghi chú */
+  }
+
+  .circle-list li::before {
+    font-size: 16px; /* Điều chỉnh kích thước của dấu bullet trong danh sách */
+  }
+  .user-infor-feedback img {
+    max-width: 20%;
+  }
+}
+/* Điều chỉnh giao diện cho màn hình có chiều rộng nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .show-feedback {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .review {
+    margin-left: 0;
+  }
+
+  .modal-contentt {
+    width: 90%; /* Điều chỉnh chiều rộng modal */
+    padding: 10px; /* Điều chỉnh khoảng cách bên trong modal */
+  }
+
+  .modal-contentt textarea,
+  .modal-contentt input[type="file"],
+  .choose-img {
+    width: calc(100% - 20px); /* Điều chỉnh chiều rộng input trong modal */
+  }
+
+  .image-container img {
+    max-width: 70px; /* Điều chỉnh kích thước ảnh xem trước */
+    max-height: 70px;
+  }
+  .review button {
+    width: 100%; /* Nút chiếm toàn bộ chiều rộng của phần tử chứa nó */
+    margin: 10px 0; /* Tạo khoảng cách giữa các nút */
+    height: 40px; /* Tăng chiều cao của nút */
+    font-size: 14px; /* Điều chỉnh kích thước font cho nút */
+  }
+}
+
+/* Reponsive menu */
+
+@media (max-width: 768px) {
+  
+  .icon-container {
+    margin-left: 10px; /* Giảm khoảng cách giữa icon-container và các phần tử xung quanh */
+  }
+
+  .login-signup {
+    display: none; /* Ẩn login-signup */
+    top: 60%; /* Điều chỉnh vị trí xuất hiện của login-signup */
+  }
+
+  .user-icon:hover + .login-signup {
+    display: none; /* Ẩn login-signup khi hover */
+  }
+
+  .search-bar {
+    margin-left: 0; /* Đưa search-bar về trạng thái ban đầu */
+    margin-right: 10px; /* Tạo khoảng cách từ phía bên phải */
+  }
+
+  #search-input {
+    font-size: 14px; /* Điều chỉnh kích thước font cho search-input */
+    padding: 3px; /* Điều chỉnh padding cho search-input */
+  }
+
+  #search-button {
+    padding: 3px 8px; /* Điều chỉnh padding cho search-button */
+  }
+}
+
+/* Điều chỉnh hiển thị của navbar-collapse khi nó được mở ra */
+@media (max-width: 767px) {
+.arrow-icon {
+  display: block;
+  float: right;
+  margin-top: -35px;
+  margin-right: 20px;
+}
+  .arrow-icon::after {
+    content: '\25BC'; /* Ký hiệu mũi tên xuống */
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0; /* Khoảng cách giữa các mục menu */
+      opacity: 0; /* Ẩn ban đầu */
+      transition: opacity 0.3s ease; /* Hiệu ứng mượt mà */
+  }
+
+  .navbar-nav > li {
+      margin-bottom: 10px; /* Khoảng cách giữa các mục menu */
+  }
+
+  .navbar-collapse.in .navbar-nav {
+      opacity: 1; /* Hiển thị khi navbar được mở ra */
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 100% !important;
+}
+}
+
+/* Định dạng submenu cấp 2 cho thiết bị di động */
+@media (max-width: 767px) {
+  .mainmenu-area ul.navbar-nav .submenu .submenu2 {
+      display: none;
+      position: static; /* Để submenu cấp 2 hiển thị đúng vị trí trong luồng trang */
+      background-color: #fff; /* Màu nền submenu cấp 2 */
+      width: 100%; /* Điều chỉnh chiều rộng submenu cấp 2 cho thiết bị di động */
+      box-shadow: none; /* Loại bỏ bóng đổ */
+  }
+
+  .mainmenu-area ul.navbar-nav .submenu li:hover .submenu2 {
+      display: block; /* Hiển thị submenu cấp 2 khi hover trên submenu cấp 1 */
+      position: static; /* Để submenu cấp 2 hiển thị đúng vị trí trong luồng trang */
+      width: 100%; /* Điều chỉnh chiều rộng submenu cấp 2 khi hiển thị */
+      border-top: 1px solid #ccc; /* Đường viền phân cách submenu cấp 2 */
+  }
+}
+/* Reponsive lien lac */
+@media (max-width: 767px) {
+  .echbay-sms-messenger {
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;
+      background-color: #fff; /* Đổi màu nền theo ý muốn */
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+  }
+  .echbay-sms-messenger a {
+      line-height: 30px;
+      color: initial;
+      display: inline-block;
+      margin: 0 10px; 
+  }
+  .echbay-sms-messenger div.phonering-alo-messenger,
+  .echbay-sms-messenger div.phonering-alo-zalo,
+  .echbay-sms-messenger div.phonering-alo-alo
+  {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+/* Reponsive deliverry */
+/* CSS cho phần "Thông tin vận chuyển" và "Thông tin đơn hàng" trên thiết bị di động */
+@media (max-width: 767px) {
+  .delivery-content-left, .delivery-content-right {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px; /* Điều chỉnh khoảng cách giữa nội dung và viền */
+      margin-bottom: 20px; /* Khoảng cách giữa hai phần */
+      border: 1px solid #ddd; /* Đường viền */
+      background: #f7f7f7; /* Màu nền */
+  }
+
+  .delivery-content-left p, .delivery-content-left label, .delivery-content-right table th, .delivery-content-right table td, .delivery-content-right-text p {
+      font-size: 14px; /* Điều chỉnh kích thước font chữ */
+  }
+
+  .delivery-content-left input, .delivery-content-left select {
+      height: 35px; /* Điều chỉnh chiều cao của input và select */
+  }
+
+  .delivery-content-right table th, .delivery-content-right table td {
+      padding: 8px 0; /* Điều chỉnh khoảng cách giữa các ô */
+  }
+
+  .delivery-content-right-button button {
+      padding: 0 12px; /* Điều chỉnh padding của nút */
+      height: 30px; /* Điều chỉnh chiều cao của nút */
+      margin: 0 5px; /* Khoảng cách giữa các nút */
+  }
+
+  .option {
+      margin: 5px 0; /* Điều chỉnh khoảng cách giữa các option */
+  }
+
+  .hinhthuc {
+      margin-left: 0; /* Đặt lại margin */
+  }
+}
+/* Reponsive tin tuc */
+@media (max-width: 767px) {
+  .container-fluid7 {
+    margin-top: 50%;
+  }
+  .container-fluid3 {
+    margin-bottom: -60px;
+  }
+  
+}
